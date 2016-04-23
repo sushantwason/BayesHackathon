@@ -126,19 +126,10 @@ PROJECT_ROOT = os.path.abspath(
     os.path.join(os.path.dirname(__file__), ".."),
 )
 
-BOWER_COMPONENTS_ROOT = os.path.join(PROJECT_ROOT, 'components')
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'djangobower.finders.BowerFinder',
 )
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-)
-
-BOWER_INSTALLED_APPS = (
-    'jquery',
-    'underscore',
-)
-BOWER_COMPONENTS_ROOT = '/'+PROJECT_ROOT+'/components/'
