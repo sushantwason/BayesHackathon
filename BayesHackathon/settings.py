@@ -16,7 +16,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_DIR = os.path.dirname(__file__)
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -57,7 +56,7 @@ ROOT_URLCONF = 'BayesHackathon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': os.path.join(BASE_DIR, "app/templates"),
+        'DIRS': [os.path.join(BASE_DIR, "app/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
