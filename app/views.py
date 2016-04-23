@@ -9,4 +9,4 @@ from django.views.decorators.csrf import csrf_protect
 # Create your views here.
 
 def index(request):
-    return render_to_response('templates/index.html',context_instance=RequestContext(request))
+    return render_to_response('index.html',context_instance=RequestContext(request))
