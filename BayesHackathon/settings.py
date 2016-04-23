@@ -56,7 +56,7 @@ ROOT_URLCONF = 'BayesHackathon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(PROJECT_DIR, "templates")],
+        'DIRS': [os.path.join(PROJECT_DIR, "app/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
